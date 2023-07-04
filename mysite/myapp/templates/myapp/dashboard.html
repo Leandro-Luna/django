@@ -1,0 +1,12 @@
+{% extends 'myapp/partials/base.html' %}
+
+{% block content %}
+<p id="parrafo" hx-swap="outerHTML">This is the stuff you want to be unique to the page. </p>
+<button hx-get=""
+    hx-trigger="click"
+    hx-target="#parrafo"
+    hx-swap="outerHTML"
+>
+    Click Me!
+</button>
+{% endblock %}
